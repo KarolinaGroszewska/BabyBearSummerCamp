@@ -210,7 +210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a3e6eddfa9f8344e9868effe61241cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bearText: {fileID: 0}
 --- !u!212 &292771716
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -271,7 +270,7 @@ Transform:
   m_GameObject: {fileID: 292771714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8305781, y: 0.8305781, z: 0.8305781}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
