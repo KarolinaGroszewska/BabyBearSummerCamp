@@ -1435,6 +1435,7 @@ GameObject:
   - component: {fileID: 1437726045}
   - component: {fileID: 1437726044}
   - component: {fileID: 1437726043}
+  - component: {fileID: 1437726046}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1507,6 +1508,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1437726046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437726042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a50a7a3198caa4197f0991dbd2c882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScrollSpeed: 10
 --- !u!1 &1685703181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,5 +1756,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 17
   height: 10
-  tilePrefab: {fileID: 2940124811115121116, guid: 6ef6bc588a7a6bc438b515fea102ae25, type: 3}
+  tilePrefab: {fileID: 2740541032425751717, guid: 6ef6bc588a7a6bc438b515fea102ae25, type: 3}
   cam: {fileID: 1437726045}
