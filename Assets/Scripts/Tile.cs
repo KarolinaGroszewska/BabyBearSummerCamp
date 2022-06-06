@@ -7,6 +7,8 @@ public class Tile : MonoBehaviour
     [SerializeField] private Color baseColor, offsetColor;
     [SerializeField] private SpriteRenderer renderer;
     [SerializeField] private GameObject highlight;
+
+    private GameObject onTile = null; 
     
     public void Init(bool isOffset)
     {
