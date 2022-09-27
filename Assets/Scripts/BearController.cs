@@ -8,6 +8,16 @@ using TMPro;
 public class BearController : MonoBehaviour
 {
     public GameObject bearController;
+    private bool selected;
+    public bool Selected
+    {
+        get => selected;
+        set
+        {
+            selected = value;
+            Highlight(value);
+        }
+    }
     
     //Timer for the minute function - Is in seconds. 
     private const int TIMER = 60;
@@ -87,7 +97,12 @@ public class BearController : MonoBehaviour
         
         UpdateText();
         StartCoroutine(MinuteUpdate());
-        
+    }
+
+    // Show or hide the highlight that shows below the bear when it is selected
+    public void Highlight(bool highlight)
+    {
+        transform.Find("Highlight").GetComponent<SpriteRenderer>().enabled = highlight;
     }
 
     private void GenerateTemperment()
@@ -136,7 +151,7 @@ public class BearController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        bearController.GetComponent<BearManager>().selectedBear = this;
+        bearController.GetComponent<BearManager>().SelectedBear = this;
     }
 
 }
