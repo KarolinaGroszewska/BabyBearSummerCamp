@@ -136,7 +136,7 @@ public class BearController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        bearController.selectedBear = this;
+        bearController.GetComponent<BearManager>().selectedBear = this;
     }
 
 }
