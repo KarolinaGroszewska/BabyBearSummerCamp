@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 28864537}
   - component: {fileID: 28864536}
   - component: {fileID: 28864535}
-  - component: {fileID: 28864534}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -164,19 +163,6 @@ RectTransform:
   m_AnchoredPosition: {x: -76, y: 1.9904}
   m_SizeDelta: {x: 53.3559, y: 63.831}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &28864534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28864532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 217ee4bc958d14c419b17ec8e038aa1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeText: {fileID: 585295713}
 --- !u!114 &28864535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,19 +206,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 28864536}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 28864534}
-        m_TargetAssemblyTypeName: TimeController, Assembly-CSharp
-        m_MethodName: StartTimer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &28864536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1687,19 +1661,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 975079620}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 28864534}
-        m_TargetAssemblyTypeName: TimeController, Assembly-CSharp
-        m_MethodName: StopTimer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &975079620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2963,6 +2925,7 @@ GameObject:
   - component: {fileID: 2079992249}
   - component: {fileID: 2079992248}
   - component: {fileID: 2079992251}
+  - component: {fileID: 2079992252}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3032,6 +2995,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20687d34e24474ba8af24b4cce323477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2079992252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079992247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 217ee4bc958d14c419b17ec8e038aa1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 585295713}
+  playButton: {fileID: 28864535}
+  stopButton: {fileID: 975079619}
 --- !u!1 &2115622094
 GameObject:
   m_ObjectHideFlags: 0
