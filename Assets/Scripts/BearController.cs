@@ -7,6 +7,17 @@ using TMPro;
 
 public class BearController : MonoBehaviour
 {
+    public GameObject bearController;
+    private bool selected;
+    public bool Selected
+    {
+        get => selected;
+        set
+        {
+            selected = value;
+            Highlight(value);
+        }
+    }
     
     //Timer for the minute function - Is in seconds. 
     private const int TIMER = 60;
@@ -18,18 +29,18 @@ public class BearController : MonoBehaviour
     private float happiness = 5;
     private float hunger = 5;
     private float energy = 5;
-    private Temperment temperment; 
+    private Temperament temperment; 
 
     
     //The GUI connected to a bearObject for testing purposes
     //public TextMeshProUGUI bearText;
     
     //Static Array containing every single temperment, currently only contains two temperments 
-    static readonly Temperment[] TEMPERMENTS = new Temperment[]
+    static readonly Temperament[] TEMPERAMENTS = new Temperament[]
     {
         
-        new Temperment("Moody", 0.8f, 1, 1),
-        new Temperment("Bubbly", 1.2f, 1, 1)
+        new Temperament("Moody", 0.8f, 1, 1),
+        new Temperament("Bubbly", 1.2f, 1, 1)
 
     };
 
@@ -82,11 +93,16 @@ public class BearController : MonoBehaviour
     void Start()
     {
         //Sets the temperment 
-        temperment = new Temperment(TEMPERMENTS[(int)Random.Range(0, TEMPERMENTS.Length)]);
+        temperment = new Temperament(TEMPERAMENTS[(int)Random.Range(0, TEMPERAMENTS.Length)]);
         
         UpdateText();
         StartCoroutine(MinuteUpdate());
-        
+    }
+
+    // Show or hide the highlight that shows below the bear when it is selected
+    public void Highlight(bool highlight)
+    {
+        transform.Find("Highlight").GetComponent<SpriteRenderer>().enabled = highlight;
     }
 
     private void GenerateTemperment()
@@ -133,7 +149,9 @@ public class BearController : MonoBehaviour
 
     }
 
-  
-
+    private void OnMouseDown()
+    {
+        bearController.GetComponent<BearManager>().SelectedBear = this;
+    }
 
 }
