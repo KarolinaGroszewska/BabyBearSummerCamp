@@ -1,9 +1,9 @@
 ﻿using System;using DefaultNamespace;namespace DefaultNamespace
 {
-    public struct Temperament
+    public struct Temperment
     {
 
-        public Temperament(string name, float happinessMod, float hungerMod, float energyMod)
+        public Temperment(string name, float happinessMod, float hungerMod, float energyMod)
         {
 
 
@@ -13,7 +13,7 @@
             EnergyMod = energyMod;
         }
 
-        public Temperament(Temperament temperment)
+        public Temperment(Temperment temperment)
         {
             Name = temperment.Name;
             HappinessMod = temperment.HappinessMod;
