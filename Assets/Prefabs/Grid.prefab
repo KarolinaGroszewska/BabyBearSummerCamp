@@ -138,7 +138,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1781088883
-  m_SortingLayer: 0
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f66a14c15cf7042af5aa2b29589873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLayout: {fileID: 5591477203162208376}
+  gridLayout: {fileID: 532931072792506608}
   mainTilemap: {fileID: 5591477204161556208}
   tempTilemap: {fileID: 8621227794252218049}
 --- !u!1 &5591477204161556211
@@ -2149,7 +2149,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1781088883
-  m_SortingLayer: 0
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

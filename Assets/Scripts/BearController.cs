@@ -18,8 +18,8 @@ public class BearController : MonoBehaviour
     private float happiness = 5;
     private float hunger = 5;
     private float energy = 5;
-    private Temperment temperment; 
-
+    private Temperment temperment;
+    
     
     //The GUI connected to a bearObject for testing purposes
     //public TextMeshProUGUI bearText;
@@ -77,7 +77,8 @@ public class BearController : MonoBehaviour
         }
     }
 
-   
+    #region Unity Methods
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,8 +88,17 @@ public class BearController : MonoBehaviour
         UpdateText();
         StartCoroutine(MinuteUpdate());
         
+        
+        
     }
 
+    #endregion
+
+    #region Bear Stats
+
+    
+
+  
     private void GenerateTemperment()
     {
     }
@@ -132,6 +142,13 @@ public class BearController : MonoBehaviour
         // bearText.text = "I am a bear!\nHappiness: " + Happiness + "\nHunger: " + Hunger + "\nSleepiness: " + Energy;
 
     }
+    #endregion
+
+    #region Pathfinding
+
+    
+
+    #endregion
 
   
 
