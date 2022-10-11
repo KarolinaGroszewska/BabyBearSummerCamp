@@ -158,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5591477203162208383}
   - component: {fileID: 5591477203162208376}
-  - component: {fileID: 8172996630357123763}
+  - component: {fileID: 8198748385990136522}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -196,7 +196,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &8172996630357123763
+--- !u!114 &8198748385990136522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f66a14c15cf7042af5aa2b29589873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLayout: {fileID: 5591477203162208376}
+  gridLayout: {fileID: 532931072792506608}
   mainTilemap: {fileID: 5591477204161556208}
   tempTilemap: {fileID: 8621227794252218049}
 --- !u!1 &5591477204161556211

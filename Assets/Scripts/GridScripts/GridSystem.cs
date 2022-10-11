@@ -6,9 +6,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
 
-public class GridBuildingSystem : MonoBehaviour
+public class GridSystem : MonoBehaviour
 {
-    public static GridBuildingSystem current;
+    public static GridSystem current;
 
     public GridLayout gridLayout;
     public Tilemap mainTilemap;

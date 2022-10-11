@@ -5,23 +5,18 @@ using UnityEngine;
 public class Building : MonoBehaviour
 {
     public bool Placed { get; private set; }
-
+    
     public BoundsInt area;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    
     #region Build Methods
 
     public bool CanBePlaced()
     {
-        Vector3Int positionInt = GridBuildingSystem.current.gridLayout.LocalToCell(transform.position);
+        Vector3Int positionInt = GridSystem.current.gridLayout.LocalToCell(transform.position);
         BoundsInt areaTemp = area;
         areaTemp.position = positionInt;
 
-        if (GridBuildingSystem.current.CanTakeArea(areaTemp))
+        if (GridSystem.current.CanTakeArea(areaTemp))
         {
             return true;
         }
@@ -31,11 +26,11 @@ public class Building : MonoBehaviour
 
     public void Place()
     {
-        Vector3Int positionInt = GridBuildingSystem.current.gridLayout.LocalToCell(transform.position);
+        Vector3Int positionInt = GridSystem.current.gridLayout.LocalToCell(transform.position);
         BoundsInt areaTemp = area;
         areaTemp.position = positionInt;
         Placed = true;
-        GridBuildingSystem.current.TakeArea(areaTemp);
+        GridSystem.current.TakeArea(areaTemp);
     }
     
 
