@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 
@@ -10,16 +9,8 @@ public class TimeController : MonoBehaviour
 {
     //The TMPro text box to display the time on 
     public TextMeshProUGUI timeText;
-    public Button playButton;
-    public Button stopButton;
     private float timer = 0.0f;
     private bool isTimer = false;
-
-    void Start()
-    {
-        playButton.onClick.AddListener(StartTimer);
-        stopButton.onClick.AddListener(StopTimer);
-    }
 
     //displays the time on the UI
     void DisplayTime()
