@@ -1,12 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
-using DefaultNamespace;
 using UnityEngine;
 using TMPro;
 
 
 public class BearController : MonoBehaviour
 {
+    public GameObject bearController;
+    private bool selected;
+    public bool Selected
+    {
+        get => selected;
+        set
+        {
+            selected = value;
+            Highlight(value);
+        }
+    }
     
     //Timer for the minute function - Is in seconds. 
     private const int TIMER = 60;
@@ -18,18 +28,18 @@ public class BearController : MonoBehaviour
     private float happiness = 5;
     private float hunger = 5;
     private float energy = 5;
-    private Temperment temperment;
+    private Temperament temperament;
     
     
     //The GUI connected to a bearObject for testing purposes
     //public TextMeshProUGUI bearText;
     
     //Static Array containing every single temperment, currently only contains two temperments 
-    static readonly Temperment[] TEMPERMENTS = new Temperment[]
+    static readonly Temperament[] TEMPERAMENTS = new Temperament[]
     {
         
-        new Temperment("Moody", 0.8f, 1, 1),
-        new Temperment("Bubbly", 1.2f, 1, 1)
+        new Temperament("Moody", 0.8f, 1, 1),
+        new Temperament("Bubbly", 1.2f, 1, 1)
 
     };
 
@@ -47,11 +57,11 @@ public class BearController : MonoBehaviour
             //If there is a positive increase, modify the happiness gain by the bear's temperament
             if (value > 0)
             {
-                happiness = value * temperment.HappinessMod;
+                happiness = value * temperament.HappinessMod;
             }
             else
             {
-                happiness = value * temperment.HappinessMod; 
+                happiness = value * temperament.HappinessMod; 
             }
             UpdateText();
         }
@@ -62,7 +72,7 @@ public class BearController : MonoBehaviour
         get => hunger;
         set
         {
-            hunger = value * temperment.HungerMod;
+            hunger = value * temperament.HungerMod;
             UpdateText();
         }
     }
@@ -72,7 +82,7 @@ public class BearController : MonoBehaviour
         get => energy;
         set
         {
-            energy = value * temperment.EnergyMod;
+            energy = value * temperament.EnergyMod;
             UpdateText();
         }
     }
@@ -83,23 +93,29 @@ public class BearController : MonoBehaviour
     void Start()
     {
         //Sets the temperment 
-        temperment = new Temperment(TEMPERMENTS[(int)Random.Range(0, TEMPERMENTS.Length)]);
+        temperament = new Temperament(TEMPERAMENTS[(int)Random.Range(0, TEMPERAMENTS.Length)]);
         
         UpdateText();
         StartCoroutine(MinuteUpdate());
-        
-        
-        
+
+
+
     }
 
     #endregion
 
-    #region Bear Stats
+    // Show or hide the highlight that shows below the bear when it is selected
+    public void Highlight(bool highlight)
+    {
+        transform.Find("Highlight").GetComponent<SpriteRenderer>().enabled = highlight;
+    }
 
-    
+#region Bear Stats
 
-  
-    private void GenerateTemperment()
+
+
+
+private void GenerateTemperment()
     {
     }
 
@@ -146,7 +162,10 @@ public class BearController : MonoBehaviour
 
     #region Pathfinding
 
-    
+    private void OnMouseDown()
+    {
+        bearController.GetComponent<BearManager>().SelectedBear = this;
+    }
 
     #endregion
 

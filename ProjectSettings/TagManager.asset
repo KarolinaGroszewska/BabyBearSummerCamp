@@ -41,16 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
-  - name: Tile
-    uniqueID: 1523977991
-    locked: 0
-  - name: Placeable Tiles
-    uniqueID: 526276045
-    locked: 0
-  - name: Objects
-    uniqueID: 1400327095
-=======
   - name: Tiles
     uniqueID: 1523977991
     locked: 0
@@ -59,5 +49,4 @@ TagManager:
     locked: 0
   - name: Objects
     uniqueID: 1896100097
->>>>>>> NewTiles
     locked: 0

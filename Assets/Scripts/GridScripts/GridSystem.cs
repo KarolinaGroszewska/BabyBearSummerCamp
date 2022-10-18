@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
+using System.IO;
 
 public class GridSystem : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class GridSystem : MonoBehaviour
 
     private void Start()
     {
-        string tilePath = @"Tiles\";
+        string tilePath = @"Tiles" + Path.DirectorySeparatorChar;
         tileBases.Add(TileType.Empty, null);
         tileBases.Add(TileType.White, Resources.Load<TileBase>(tilePath + "white"));
         tileBases.Add(TileType.Green, Resources.Load<TileBase>(tilePath + "green"));
