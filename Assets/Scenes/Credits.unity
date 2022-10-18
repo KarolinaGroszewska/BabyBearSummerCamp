@@ -226,7 +226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -255, y: -35}
+  m_AnchoredPosition: {x: -255, y: -149}
   m_SizeDelta: {x: 80, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &814314521
@@ -249,21 +249,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Original Concept Idea by Aili Harmon\n\nCreative Director:\n\nKaicie Kidd\n\n\nArtist:\n\nClaire
-    Seong\n\n\nTechnical Director:\n\nGeorge Padron\n\n\nProgrammers:\n\nKarolina
-    Groszewska\n\nAili Harmon\n\nOlivia Liu\n\nGeorge Padron\n\nKevin Pan\n\n\nMusic:\n\nDance
-    Around the Campfire (Royalty-Free)\nComposed by JuliusH from Pixabay\n\nSummer
-    Trip (Royalty-Free)\nComposed by Sweet_kr from Pixabay\n\n\nSpecial Thanks:\n\nTo
-    Mr. Brown, who gave me the avenue to explore game development nearly six years
-    ago and find a way to make an impact with what I make and to my parents for supporting
-    me through every project I've worked on. ~ Kari\n\nI\u2019d like to thank Chris
-    Rowe for being excited about this organization from the start and believing in
-    it every step of the way and to my family for fostering my love of video games
-    many years ago and being there for me. ~ Kaicie\n\nSpecial thanks to Janice Dishner
-    for her constant support. ~ Claire\n\nThanks to George for his good catch of
-    my basic loop variable mistake and also the art team for the amazing art! ~ Olivia\n\n\nVanderbilt:
-    Programmers of Games\n2021-2022 Exec Board:\n\nAili Harmon\nKarolina Groszewska\nKevin
-    Pan\nKaicie Kidd\nGeorge Padron\n\nFaculty Advisor:\n\nDr. Robert Bodenheimer\n"
+  m_text: "Original Concept Idea by Aili Harmon\n\nCreative Director:\n\nKaicie Kidd\n\n\nArtists:\n\nClaire
+    Seong\n\nVanessa Dadzie\n\nMilka Negasi\n\n\nTechnical Director:\n\nGeorge Padron\n\n\nProgrammers:\n\nKarolina
+    Groszewska\n\nAili Harmon\n\nOlivia Liu\n\nGeorge Padron\n\nKevin Pan\n\nSebastian
+    Bond\n\nAlbert Castrejon\n\n\nMusic:\n\nDance Around the Campfire (Royalty-Free)\nComposed
+    by JuliusH from Pixabay\n\nSummer Trip (Royalty-Free)\nComposed by Sweet_kr from
+    Pixabay\n\n\nSpecial Thanks:\n\nTo Mr. Brown, who gave me the avenue to explore
+    game development nearly six years ago and find a way to make an impact with what
+    I make and to my parents for supporting me through every project I've worked
+    on. ~ Kari\n\nI\u2019d like to thank Chris Rowe for being excited about this
+    organization from the start and believing in it every step of the way and to
+    my family for fostering my love of video games many years ago and being there
+    for me. ~ Kaicie\n\nSpecial thanks to Janice Dishner for her constant support.
+    ~ Claire\n\nThanks to George for his good catch of my basic loop variable mistake
+    and also the art team for the amazing art! ~ Olivia\n\n\nVanderbilt: Programmers
+    of Games\nExecutive Board:\n\nAili Harmon\nKarolina Groszewska\nKevin Pan\nKaicie
+    Kidd\nGeorge Padron\nMilka Negasi\n\n\nFaculty Advisor:\n\nDr. Robert Bodenheimer\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 151beb66ed05044aea412c89ab22284d, type: 2}
   m_sharedMaterial: {fileID: 5195797709038814275, guid: 151beb66ed05044aea412c89ab22284d, type: 2}
@@ -290,8 +291,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -542,8 +543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1424}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 0, y: -3757}
+  m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1520712853
 MonoBehaviour:
@@ -924,7 +925,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 400, y: 200}
+  m_SizeDelta: {x: 800, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2000392989
 MonoBehaviour:
