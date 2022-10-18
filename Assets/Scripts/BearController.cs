@@ -6,7 +6,7 @@ using TMPro;
 
 public class BearController : MonoBehaviour
 {
-    public GameObject bearController;
+    public GameObject bearManager;
     private bool selected;
     public bool Selected
     {
@@ -162,9 +162,9 @@ private void GenerateTemperment()
 
     #region Pathfinding
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
-        bearController.GetComponent<BearManager>().SelectedBear = this;
+        bearManager.GetComponent<BearManager>().SelectedBear = this;
     }
 
     #endregion
